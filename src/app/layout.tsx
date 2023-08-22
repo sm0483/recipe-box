@@ -1,7 +1,7 @@
 "use client";
 import "./globals.css";
 import { SessionProvider } from "next-auth/react";
-import NavBar from "@/components/NavBar/NavBar";
+import SearchBar from "@/components/Search/Search";
 
 export default function RootLayout({
    children,
@@ -11,7 +11,10 @@ export default function RootLayout({
    return (
       <html lang="en">
          <SessionProvider>
-            <body>{children}</body>
+            <body>
+               <SearchBar />
+               {children}
+            </body>
          </SessionProvider>
       </html>
    );

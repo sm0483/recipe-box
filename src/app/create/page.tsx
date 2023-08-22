@@ -11,8 +11,10 @@ export default function Page() {
    } else if (status === "authenticated") {
       return (
          <main>
-            <NavBar />
-            <Create props={{ title: "", ingredients: "", steps: "" }} />
+            <Create
+               props={{ title: "", ingredients: "", steps: "", _id: "" }}
+               edit={false}
+            />
          </main>
       );
    }

@@ -10,8 +10,6 @@ export default function Home() {
    if (status === "authenticated") {
       return (
          <main>
-            <NavBar />
-            <SearchBar />
             <Recipe />
          </main>
       );

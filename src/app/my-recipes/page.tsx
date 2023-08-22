@@ -9,7 +9,6 @@ export default function Page() {
    if (status === "authenticated") {
       return (
          <main>
-            <NavBar />
             <MyRecipe />
          </main>
       );
